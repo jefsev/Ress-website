@@ -6,6 +6,8 @@ const Header = () => {
     const { custom_logo } = usePage().props
     const { primary_menu } = usePage().props
 
+    console.log(primary_menu)
+
     return (
         <>
             <header className='nav flex flex-row justify-between items-center py-3'>

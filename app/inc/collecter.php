@@ -1,6 +1,6 @@
 <?php
 
-namespace Nomix\Inc;
+namespace Ress\Inc;
 
 class Collecter {
     public static function collectFiles( array $files = []) {

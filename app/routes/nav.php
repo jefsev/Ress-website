@@ -2,6 +2,11 @@
 use BoxyBird\Inertia\Inertia;
 
 add_action('init', function () {
+    //Check if theme nav is enabled
+    $nav_items = [];
+    if(has_nav_menu('primary_navigation')) {
+        $nav_items = wp_get_nav_menu_items('menu-1');
+    }
     //Synchronously using array
     Inertia::share([
         'custom_logo' => get_custom_logo_url(),
@@ -11,6 +16,6 @@ add_action('init', function () {
                 'link' => $menu_item->url,
                 'name' => $menu_item->title,
             ];
-        }, wp_get_nav_menu_items('primary-menu'))
+        }, $nav_items)
     ]);
 });
