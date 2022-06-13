@@ -1,6 +1,7 @@
 <?php
 
 use BoxyBird\Inertia\Inertia;
+use Ress\Controllers\FrontPage;
 
 /**
  * Setup everything we need for the theme.
@@ -139,3 +140,18 @@ add_action( 'wpseo_frontend_presenters',function( $presenters ) {
 
     return $presenters;
 } );
+
+/**
+ * Initialize ACF Builder
+ * Get acf fields from controllers
+ */
+add_action('init', function () {
+    $front_page_acf = FrontPage::acf_fields();
+    $fields = [];
+
+    array_push($fields, $front_page_acf);
+
+    array_walk($fields, function($field) {
+        acf_add_local_field_group($field->build());
+    });
+});

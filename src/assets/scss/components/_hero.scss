@@ -1,0 +1,27 @@
+.hero {
+    background: #030300;
+    padding-top: 80px;
+    padding-bottom: 130px;
+
+    h1 {
+        font-size: 65px;
+        line-height: 85px;
+        color: #fff;
+        text-align: center;
+
+        span.yellow-bg {
+            font-size: 65px;
+            line-height: 85px;
+            color: #030300;
+            background: #FFD54A;
+        }
+    }
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 18px;
+    }
+}

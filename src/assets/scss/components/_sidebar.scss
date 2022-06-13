@@ -1,0 +1,25 @@
+.sidebar-nav {
+    border-right: 1px solid #e6e6e6;
+
+    a {
+        padding: 9px 10px 9px 30px;
+        display: block;
+        text-decoration: none;
+        width: 95%;
+        border-radius: 6px;
+        margin-bottom: 6px;
+
+        &.active {
+            background: #F9F4E3;
+            border-left: 10px solid #FFD54A;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
