@@ -1,27 +1,29 @@
 import React from 'react'
-import { Link } from '@inertiajs/inertia-react';
-import AppHead from '../Components/Shared/AppHead';
+import AppHead from '../Components/Shared/AppHead'
 import Header from '../Components/Shared/Header'
 import Footer from '../Components/Shared/Footer'
+import Hero from '../Components/Hero'
+import Sidebar from '../Components/Shared/Sidebar'
 
 const Index = (props) => {
-
+    console.log(props)
     return (
         <>
             <AppHead seo={props.yoast_meta} pageTitle={props.title} />
 
-            <div className='container mx-auto px-2'>
+            <div className='layout'>
                 <Header />
-                <h1>{props.title}</h1>
-                <div className='content' dangerouslySetInnerHTML={{ __html: props.content }} ></div>
-                <div className="post-loop py-3">
-                    {props.posts.map((post, index) =>
-                        <article className='post py-2' key={index}>
-                            <h2>{post.post_title}</h2>
-                            <Link href={'/' + post.post_name}>Read more</Link>
-                        </article>
-                    )}
+                <Hero acf={props.acf} />
+
+                <div className="def-page container mx-auto px-3 flex flex-row justify-start items-start">
+                    <aside>
+                        <Sidebar />
+                    </aside>
+                    <div className="content">
+                        <div dangerouslySetInnerHTML={{ __html: props.content }} ></div>
+                    </div>
                 </div>
+
                 <Footer />
             </div>
 

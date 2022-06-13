@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,300;0,700;1,400;1,700;1,300&display=swap');
+
 * {
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
 
@@ -30,4 +33,25 @@ h4 {
     font-weight: 700;
 }
 
+.container {
+    max-width: 1180px;
+}
+
+.def-page {
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    aside {
+        width: 280px;
+        margin-right: 50px;
+    }
+
+    .content {
+        max-width: 720px;
+        width: 100%;
+    }
+}
+
 @import 'components/_header.scss';
+@import 'components/_sidebar.scss';
+@import 'components/_hero.scss';

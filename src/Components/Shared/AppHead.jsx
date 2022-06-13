@@ -2,7 +2,7 @@ import React from 'react'
 import { Head } from '@inertiajs/inertia-react';
 
 const AppHead = ({ seo, pageTitle }) => {
-    console.log(seo)
+
     return (
         <>
             {(seo.yoast_status === false) &&

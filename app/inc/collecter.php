@@ -2,10 +2,13 @@
 
 namespace Ress\Inc;
 
+use Ress\Controllers\FrontPage;
+
 class Collecter {
     public static function collectFiles( array $files = []) {
         
-        if (!$files) {
+        if (!$files) 
+        {
             wp_die(
                 sprintf(__('Error locating for inclusion.', 'nomix'), $file)
             );
@@ -15,4 +18,5 @@ class Collecter {
             }
         }
     }
+ 
 }
