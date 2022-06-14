@@ -1,7 +1,6 @@
 import React from 'react'
 import AppHead from '../Components/Shared/AppHead'
 import Header from '../Components/Shared/Header'
-import Footer from '../Components/Shared/Footer'
 import Hero from '../Components/Hero'
 import Sidebar from '../Components/Shared/Sidebar'
 
@@ -23,8 +22,6 @@ const Index = (props) => {
                         <div dangerouslySetInnerHTML={{ __html: props.content }} ></div>
                     </div>
                 </div>
-
-                <Footer />
             </div>
 
         </>

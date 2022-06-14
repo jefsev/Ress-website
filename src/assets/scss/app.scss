@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,300;0,700;1,400;1,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&family=VT323&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+}
+
+p {
+    margin: 0.75rem 0;
 }
 
 a {
@@ -14,23 +18,62 @@ a {
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: 700;
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    color: #030300;
 }
 
 h2 {
+    margin-top: 2rem;
     font-size: 24px;
     font-weight: 700;
+    color: #030300;
 }
 
 h3 {
+    margin-top: 2rem;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
+    color: #030300;
 }
 
 h4 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
+    color: #030300;
+}
+
+code {
+    font-family: 'Poppins', sans-serif;
+    background: #1B1D23;
+    padding: 25px;
+    border-radius: 6px;
+    color: #fff;
+    display: block;
+    margin-top: 12px;
+
+    span.yellow-code {
+        color: #FFD54A;
+    }
+
+    span.pink-code {
+        color: rgb(204, 153, 205);
+    }
+
+    span.grey-code {
+        opacity: .7;
+    }
+}
+
+code.folders {
+    line-height: 2;
+}
+
+blockquote {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f4e3;
+    padding: 25px;
+    font-style: italic;
 }
 
 .container {
