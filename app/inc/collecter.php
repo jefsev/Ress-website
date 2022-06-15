@@ -1,5 +1,4 @@
 <?php
-
 namespace Ress\Inc;
 
 class Collecter {
@@ -16,5 +15,4 @@ class Collecter {
             }
         }
     }
- 
 }
