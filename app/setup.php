@@ -147,7 +147,8 @@ add_action( 'wpseo_frontend_presenters',function( $presenters ) {
  */
 if( class_exists('ACF') ) {
     add_action('init', function () {
-        $front_page_acf = FrontPage::acf_fields();
+        $front_page = new FrontPage();
+        $front_page_acf = $front_page->acf_fields();
         $fields = [];
     
         array_push($fields, $front_page_acf);
