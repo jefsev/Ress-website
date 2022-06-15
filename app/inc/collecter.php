@@ -2,8 +2,6 @@
 
 namespace Ress\Inc;
 
-use Ress\Controllers\FrontPage;
-
 class Collecter {
     public static function collectFiles( array $files = []) {
         
