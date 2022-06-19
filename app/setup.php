@@ -67,6 +67,8 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'ress'),
+        'secondary_navigation' => __('Secondary Navigation', 'ress'),
+        'tertiary_navigation' => __('Tertiary Navigation', 'ress'),
     ]);
 
     /**
