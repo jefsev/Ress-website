@@ -98,3 +98,6 @@ blockquote {
 @import 'components/_header.scss';
 @import 'components/_sidebar.scss';
 @import 'components/_hero.scss';
+
+// Add plugin css - Head is loaded once without plugin css if Code syntax is not used on the first loaded page
+@import 'components/_plugins.scss';
