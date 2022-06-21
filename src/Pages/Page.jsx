@@ -3,9 +3,9 @@ import AppHead from '../Components/Shared/AppHead'
 import Header from '../Components/Shared/Header'
 import Sidebar from '../Components/Shared/Sidebar'
 
+
 const Page = (props) => {
     return (
-
         <>
             <AppHead seo={props.yoast_meta} pageTitle={props.title} />
 
