@@ -1,57 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&family=VT323&display=swap');
-
+$background: #16181D;
 
 * {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+html {
+    background: $background;
 }
 
 p {
     margin: 0.75rem 0;
+    line-height: 1.5;
 }
 
 a {
     text-decoration: underline;
+    line-height: 1.5;
 }
 
 h1 {
-    font-family: 'VT323', monospace;
-    font-size: 60px;
-    color: #030300;
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    line-height: 1;
+    color: #f9f4e3;
+    margin-bottom: 20px;
 }
 
 h2 {
+    font-family: 'Poppins', sans-serif;
     margin-top: 2rem;
     font-size: 24px;
     font-weight: 700;
-    color: #030300;
+    color: #f9f4e3;
 }
 
 h3 {
+    font-family: 'Poppins', sans-serif;
     margin-top: 2rem;
     font-size: 20px;
     font-weight: 600;
-    color: #030300;
+    color: #f9f4e3;
 }
 
 h4 {
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color: #030300;
+    color: #f9f4e3;
 }
 
 code {
     font-family: 'Poppins', sans-serif;
-    background: #1B1D23;
-    padding: 25px;
-    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 16px;
+
+    span {
+        font-size: 16px;
+    }
+
+    * {
+        font-size: 16px;
+    }
+}
+
+pre.folders {
+    line-height: 2;
+    background: #1d1f21 !important;
+    border-radius: 0.3em;
+    border: 1px solid rgba(255,255,255, .1);
     color: #fff;
     display: block;
-    margin-top: 12px;
+    margin: 1.6em 0;
+    padding: 20px;
 
     span.yellow-code {
         color: #FFD54A;
@@ -66,15 +94,16 @@ code {
     }
 }
 
-code.folders {
-    line-height: 2;
-}
-
 blockquote {
     font-family: 'Poppins', sans-serif;
-    background: #f9f4e3;
+    background: #1d1f21;
     padding: 25px;
     font-style: italic;
+    font-size: 16px;
+
+    p {
+        font-size: 16px;
+    }
 }
 
 .container {
@@ -95,7 +124,3 @@ blockquote {
         width: 100%;
     }
 }
-
-@import 'components/_header.scss';
-@import 'components/_sidebar.scss';
-@import 'components/_hero.scss';

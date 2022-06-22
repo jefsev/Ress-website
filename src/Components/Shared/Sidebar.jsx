@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, usePage } from '@inertiajs/inertia-react';
+import '../../assets/scss/components/_sidebar.scss'
 
 const Sidebar = () => {
     const { primary_menu, seconday_menu, tertiary_menu } = usePage().props

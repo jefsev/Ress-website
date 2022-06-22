@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AppHead from '../Components/Shared/AppHead'
 import Header from '../Components/Shared/Header'
 import Sidebar from '../Components/Shared/Sidebar'
-
+import Prism from 'prismjs'
 
 const Page = (props) => {
+    Prism.highlightAll()
+
+    useEffect(() => {
+        Prism.highlightAll()
+    }, []);
+
     return (
         <>
             <AppHead seo={props.yoast_meta} pageTitle={props.title} />
