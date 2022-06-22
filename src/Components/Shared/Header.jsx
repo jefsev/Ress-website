@@ -2,11 +2,10 @@ import React from 'react';
 import { Link, usePage } from '@inertiajs/inertia-react';
 import defaultLogo from '../../assets/images/logo-nm.svg';
 import githubLogo from '../../assets/images/github.svg';
+import '../../assets/scss/components/_header.scss'
 
 const Header = () => {
     const { custom_logo } = usePage().props
-
-
 
     return (
         <>
