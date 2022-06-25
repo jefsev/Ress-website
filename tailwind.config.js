@@ -1,14 +1,12 @@
 module.exports = {
     content: [
-        "./src/Pages/*.{js,jsx,ts,tsx}",
-        "./src/Components/Shared/*.{js,jsx,ts,tsx}",
-        "./src/Components/*.{js,jsx,ts,tsx}",
+        "./src/*.{js,jsx}",
+        "./src/Pages/*.{js,jsx}",
+        "./src/Components/Shared/*.{js,jsx}",
+        "./src/Components/*.{js,jsx}",
     ],
     theme: {
         extend: {},
     },
     plugins: [],
-    corePlugins: {
-        preflight: true,
-    },
 }
